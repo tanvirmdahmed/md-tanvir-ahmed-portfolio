@@ -9,12 +9,12 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
-import Work4 from './assets/project-4.jpeg';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
+import Work1 from './assets/learning-camp.png';
+import Work2 from './assets/kids.png';
+import Work3 from './assets/spicy.png';
+// import Work4 from './assets/project-4.jpeg';
+// import Work5 from './assets/project-5.jpg';
+// import Work6 from './assets/project-6.jpg';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -255,165 +255,34 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'Photo Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Photo',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Photoshop',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
+    title: 'Learning Camp - Gym platform',
+    usedTech: ['Tailwind CSS', 'React JS', 'Express JS', 'MongoDb', 'Firebase'],
+    live: 'https://learning-capm.web.app/',
+    client: 'https://github.com/tanvirmdahmed/learning-camp-client',
+    server: 'https://github.com/tanvirmdahmed/lerning-camp-server',
+    details: 'Learning Camp is a physical exercise learning platform. Students can enrol a course by paying the money using Stripe payment method and many more...'
   },
 
   {
     id: 2,
     img: Work2,
-    title: 'Website Design',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'React JS',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
+    title: 'Kids - A toy selling website',
+    usedTech: ['Tailwind CSS', 'React JS', 'Express JS', 'MongoDb', 'Firebase'],
+    live: 'https://toy-biz.web.app/',
+    client: 'https://github.com/tanvirmdahmed/kids-client',
+    server: 'https://github.com/tanvirmdahmed/kids-server',
+    details: 'Kids is a toy selling multi vendor website. Anyone can upload and manage his toy and monitor his selling.'
   },
 
   {
     id: 3,
     img: Work3,
-    title: 'Video Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Video',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Premium',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
-
-  {
-    id: 4,
-    img: Work4,
-    title: 'Video Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Video',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Premium',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
-
-  {
-    id: 5,
-    img: Work5,
-    title: 'Landing Page',
-    details: [
-      {
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        title: 'Language : ',
-        desc: 'React JS, Node JS',
-      },
-      {
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
-
-  {
-    id: 6,
-    img: Work6,
-    title: 'Photo Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Photo',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Photoshop',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dibble.com',
-      },
-    ],
+    title: 'Spicy - Find top chef',
+    usedTech: ['Tailwind CSS', 'React JS', 'Express JS', 'Firebase'],
+    live: 'https://chef-recipe-hunter-clien-41d0d.web.app/',
+    client: 'https://github.com/tanvirmdahmed/spicy-client',
+    server: 'https://github.com/tanvirmdahmed/spicy-server',
+    details: 'Spicy is a chef finding website where anyone can shortlist top chefs by the number of recipes, total number of like given by customers and many more.'
   },
 ];
 

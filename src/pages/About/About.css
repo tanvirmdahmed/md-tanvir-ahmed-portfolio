@@ -14,7 +14,7 @@
 .section__subtitle {
     font-size: var(--h3-font-size);
     font-weight: var(--weight-600);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .info__list .info__title,

@@ -3,9 +3,9 @@ import './Contact.css'
 
 const Contact = () => {
     return (
-        <div>
-            Contact
-        </div>
+        <section className="contact section">
+            <h2 className="section__title">Get In <span>Touch</span></h2>
+        </section>
     );
 };
 
