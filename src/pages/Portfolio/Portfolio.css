@@ -5,8 +5,8 @@
 }
 
 .portfolio__item {
-    background-color: white;
-    max-height: 600px;
+    background-color: var(--card-color);
+    max-height: 700px;
     border-radius: 10px;
     /* padding: 20px; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
@@ -14,7 +14,8 @@
 
 .img__container {
     max-width: 100%;
-    margin-bottom: 5px;
+    padding: 30px 30px 0 30px;
+    margin-bottom: 15px;
 }
 
 .bg__img {
@@ -32,13 +33,12 @@
 
 .info__container {
     padding: 0 30px;
-    text-align: justify;
 }
 
 .portfolio__subtitle {
-    font-size: var(--large-font-size);
+    color: var(--first-color);
+    font-size: var(--h3-font-size);
     font-weight: var(--weight-600);
-    margin-bottom: 5px;
 }
 
 .portfolio__description {
@@ -49,25 +49,29 @@
 
 .techs {
     margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .tech {
-    background-color: lightcoral;
+    /* background-color: var(--first-color); */
+    background-color: #211e1e;
     color: var(--text-white);
     padding: 5px;
     border-radius: 10px;
     font-size: var(--tiny-font-size);
-    margin-right: 10px;
 }
 
 .link__btns {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 30px;
     text-align: right;
 }
 
 .link__btn {
     border: 1px solid var(--first-color);
+    color: var(--first-color);
     font-size: var(--tiny-font-size);
     padding: 5px 10px;
     border-radius: 30px;
@@ -77,4 +81,55 @@
 .link__btn:hover {
     color: var(--text-white);
     background-color: var(--first-color);
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolio__container {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 50px;
+    }
+
+    .portfolio__item {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .stats__title {
+        padding-left: 35px;
+    }
+
+    .stats__title {
+        width: 22px;
+    }
+
+    .skills__container {
+        row-gap: 32px;
+    }
+
+    .progress__circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills__title {
+        margin-top: 20px;
+    }
+
+    .resume__icon {
+        width: 36px;
+        height: 36px;
+        line-height: 38px;
+    }
+
+    .resume__item {
+        padding-left: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio__item {
+        width: 100%;
+        margin: 0 auto;
+    }
 }

@@ -7,26 +7,33 @@ import Stats from '../../components/Stats';
 import Skills from '../../components/Skills';
 import { resume } from '../../data';
 import ResumeItem from '../../components/ResumeItem';
+import { Bounce } from 'react-awesome-reveal';
 
 const About = () => {
     return (
         <main className="section container">
             <section className="about">
-                <h2 className="section__title">
-                    About <span>Me</span>
-                </h2>
+                <Bounce delay={500}>
+                    <h2 className="section__title">
+                        About <span>Me</span>
+                    </h2>
+                </Bounce>
 
                 <div className="about__container grid">
                     <div className="about__info">
-                        <h3 className="section__subtitle">Personal Infos</h3>
+                        <Bounce delay={700}>
+                            <h3 className="section__subtitle">Personal Infos</h3>
+                        </Bounce>
 
                         <ul className="info__list grid">
                             <Info></Info>
                         </ul>
 
-                        <a href={Resume} download='' className="button btn-resume">
-                            Download Resume <span className="button__icon"><FaDownload></FaDownload></span>
-                        </a>
+                        <Bounce delay={700}>
+                            <a href={Resume} download='' className="button btn-resume">
+                                Download Resume <span className="button__icon"><FaDownload></FaDownload></span>
+                            </a>
+                        </Bounce>
                     </div>
 
                     <div className="stats grid">
@@ -38,7 +45,9 @@ const About = () => {
             <div className="separator"></div>
 
             <section className="skills">
-                <h3 className="section__subtitle subtitle__center">MY Skills</h3>
+                <Bounce delay={700}>
+                    <h3 className="section__subtitle subtitle__center">MY Skills</h3>
+                </Bounce>
 
                 <div className="skills__container grid">
                     <Skills></Skills>
@@ -48,7 +57,9 @@ const About = () => {
             <div className="separator"></div>
 
             <section className="resume">
-                <h3 className="section__subtitle subtitle__center">Experience & Education</h3>
+                <Bounce delay={700}>
+                    <h3 className="section__subtitle subtitle__center">Experience & Education</h3>
+                </Bounce>
 
                 <div className="resume__container grid">
                     <div className="resume__data">

@@ -101,7 +101,7 @@
 .skills__title {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    font-weight: var(--weight-400);
+    font-weight: var(--weight-600);
     text-align: center;
     margin-top: 24px;
 }
@@ -172,4 +172,63 @@
 .resume__description {
     font-size: var(--smaller-font-size);
     line-height: 1.6;
+}
+
+.session {
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about__container,
+    .resume__container {
+        grid-template-columns: 1fr;
+    }
+
+    .about__container {
+        row-gap: 40px;
+    }
+
+    .subtitle__center {
+        margin-bottom: 45px;
+    }
+
+    .skills__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .resume__container {
+        row-gap: 45px;
+    }
+
+    .resume__item:not(last-child) {
+        margin-bottom: 45px;
+    }
+
+    .separator {
+        margin: 65px auto 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .info__title {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .stats__box {
+        padding: 15px 15px 25px 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
 }

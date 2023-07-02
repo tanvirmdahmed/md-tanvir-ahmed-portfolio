@@ -19,16 +19,34 @@
     padding-top: 20px;
 }
 
+.home__greeting {
+    font-size: var(--h3-font-size);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .home__title {
     position: relative;
     font-size: var(--h1-font-size);
     /* font-size: 35px; */
     line-height: 1.24;
     padding-left: 70px;
+    margin-bottom: 10px;
 }
 
-.home__title span {
+.home__subtitle {
+    position: relative;
+    font-size: var(--h2-font-size);
+    font-weight: var(--weight-400);
+    /* font-size: 35px; */
+    line-height: 1.24;
+    padding-left: 70px;
+}
+
+.home__title span,
+.home__subtitle span {
     color: var(--first-color);
+    font-weight: var(--weight-700);
 }
 
 .home__title::before {
@@ -45,6 +63,7 @@
 .home__description {
     line-height: 2.125;
     margin-block: 16px 32px;
+    text-align: justify;
 }
 
 .color__block {
@@ -55,4 +74,103 @@
     top: -50%;
     left: -83%;
     transform: rotate(-15deg);
+}
+
+@media screen and (max-width: 1200px) {
+    .home__data {
+        padding-right: 40px;
+    }
+
+    .home__title {
+        font-size: var(--big-font-size);
+    }
+
+    .home__description {
+        font-size: var(--small-font-size);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home {
+        padding: 20px;
+        grid-template-columns: 5fr 7fr;
+
+    }
+
+    .home__data {
+        padding-right: 0;
+    }
+
+    .section {
+        padding-block: 50px;
+    }
+
+    .section__title {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    .color__block {
+        display: none;
+    }
+
+    .home__img {
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .home__content {
+        max-width: 500px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .home__title {
+        padding-left: 0;
+    }
+
+    .home__title::before {
+        all: unset;
+    }
+
+    .home__title span {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* .home__img {
+        display: none;
+    } */
+
+    .home__content {
+        margin-block: auto;
+        text-align: left;
+    }
+
+    .home__title {
+        font-size: var(--h1-font-size);
+    }
+
+    .home__description {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home__title span {
+        display: inline;
+    }
 }

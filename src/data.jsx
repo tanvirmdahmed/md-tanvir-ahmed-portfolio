@@ -61,13 +61,13 @@ export const personalInfo = [
   {
     id: 1,
     title: 'First Name : ',
-    description: 'Steve',
+    description: 'Md. Tanvir',
   },
 
   {
     id: 2,
     title: 'Last Name : ',
-    description: 'Milner',
+    description: 'Ahmed',
   },
 
   {
@@ -79,175 +79,198 @@ export const personalInfo = [
   {
     id: 4,
     title: 'Nationality : ',
-    description: 'Tunisian',
+    description: 'Bangladeshi',
   },
 
   {
     id: 5,
     title: 'Freelance : ',
-    description: 'Available',
+    description: 'Not Available',
   },
 
   {
     id: 6,
     title: 'Address : ',
-    description: 'Tunis',
+    description: 'Dhaka, Bangladesh',
   },
 
   {
     id: 7,
     title: 'Phone : ',
-    description: '+21621184010',
+    description: '+8801516124277',
   },
 
   {
     id: 8,
     title: 'Email : ',
-    description: 'you@mail.com',
+    description: 'tanvirhemel09@gmail.com',
   },
 
   {
     id: 9,
     title: 'Skype : ',
-    description: 'steve.milner',
+    description: 'tanvirhemel09',
   },
 
   {
     id: 10,
-    title: 'Langages : ',
-    description: 'French, English',
+    title: 'Languages : ',
+    description: 'Bengali, English',
   },
 ];
 
 export const stats = [
   {
     id: 1,
-    no: '12+',
-    title: 'Years of <br /> Experience',
+    no: '8+',
+    title: 'Months of <br /> Experience',
   },
 
   {
     id: 2,
-    no: '97+',
+    no: '10+',
     title: 'Completed <br /> Projects',
   },
 
   {
     id: 3,
-    no: '81+',
+    no: '0+',
     title: 'Happy <br /> Customers',
   },
 
   {
     id: 4,
-    no: '53+',
+    no: '0+',
     title: ' Awards <br /> Won',
   },
 ];
 
 export const resume = [
-  {
-    id: 1,
-    category: 'experience',
-    icon: <FaBriefcase />,
-    year: '2018 - PRESENT',
-    title: 'Web Developer <span> Envato </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
-  },
+  // {
+  //   id: 1,
+  //   category: 'experience',
+  //   icon: <FaBriefcase />,
+  //   year: '2018 - PRESENT',
+  //   title: 'Web Developer <span> Envato </span>',
+  //   desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+  // },
 
-  {
-    id: 2,
-    category: 'experience',
-    icon: <FaBriefcase />,
-    year: '2013 - 2018',
-    title: 'UI/UX Designer <span> Themeforest </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
-  },
+  // {
+  //   id: 2,
+  //   category: 'experience',
+  //   icon: <FaBriefcase />,
+  //   year: '2013 - 2018',
+  //   title: 'UI/UX Designer <span> Themeforest </span>',
+  //   desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+  // },
 
-  {
-    id: 3,
-    category: 'experience',
-    icon: <FaBriefcase />,
-    year: '2005 - 2013',
-    title: 'Consultant <span> Videohive </span>',
-    desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
-  },
+  // {
+  //   id: 3,
+  //   category: 'experience',
+  //   icon: <FaBriefcase />,
+  //   year: '2005 - 2013',
+  //   title: 'Consultant <span> Videohive </span>',
+  //   desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
+  // },
 
   {
     id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2015',
-    title: 'Engineering Degree <span> Oxford University </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
+    year: '2022',
+    title: 'MBA <span> Bangladesh University of Professionals </span>',
+    session: '2020-22',
+    duration: '2 years',
   },
 
   {
     id: 5,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2012',
-    title: 'Master Degree <span> KIEV University </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2018',
+    title: 'BBA <span> National University of Bangladesh </span>',
+    session: '2014-18',
+    duration: '4 years',
   },
 
   {
     id: 6,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2009',
-    title: 'Bachelor Degree <span> Tunis High School </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore',
+    year: '2014',
+    title: 'HSC <span> BN College, Dhaka </span>',
+    session: '2012-14',
+    duration: '2 years',
   },
 ];
 
 export const skills = [
   {
     id: 1,
-    title: 'Html',
-    percentage: '25',
+    title: 'Html5',
+    percentage: '90',
   },
 
   {
     id: 2,
-    title: 'Javascript',
-    percentage: '89',
+    title: 'CSS3',
+    percentage: '85',
   },
 
   {
     id: 3,
-    title: 'Css',
-    percentage: '70',
+    title: 'Tailwind',
+    percentage: '85',
   },
 
   {
     id: 4,
-    title: 'Php',
-    percentage: '66',
+    title: 'Bootstrap',
+    percentage: '75',
   },
 
   {
     id: 5,
-    title: 'Wordpress',
-    percentage: '95',
+    title: 'JavaScript',
+    percentage: '75',
   },
 
   {
     id: 6,
-    title: 'Jquery',
-    percentage: '50',
+    title: 'React JS',
+    percentage: '70',
   },
 
   {
     id: 7,
-    title: 'Angular',
-    percentage: '65',
+    title: 'Node JS',
+    percentage: '50',
   },
 
   {
     id: 8,
-    title: 'React',
-    percentage: '45',
+    title: 'Express JS',
+    percentage: '55',
+  },
+  {
+    id: 9,
+    title: 'MongoDb',
+    percentage: '55',
+  },
+  {
+    id: 10,
+    title: 'Firebase',
+    percentage: '65',
+  },
+  {
+    id: 11,
+    title: 'Github',
+    percentage: '70',
+  },
+  {
+    id: 10,
+    title: 'Figma',
+    percentage: '60',
   },
 ];
 
@@ -271,7 +294,7 @@ export const portfolio = [
     live: 'https://toy-biz.web.app/',
     client: 'https://github.com/tanvirmdahmed/kids-client',
     server: 'https://github.com/tanvirmdahmed/kids-server',
-    details: 'Kids is a toy selling multi vendor website. Anyone can upload and manage his toy and monitor his selling.'
+    details: 'Kids is a toy selling multi vendor website where customer can buy toys by sub-categories. Anyone can upload and manage his toy and monitor his selling.'
   },
 
   {
