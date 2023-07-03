@@ -8,8 +8,10 @@ import Skills from '../../components/Skills';
 import { resume } from '../../data';
 import ResumeItem from '../../components/ResumeItem';
 import { Bounce } from 'react-awesome-reveal';
+import useTitle from '../../Hooks/useTitle';
 
 const About = () => {
+    useTitle('About')
     return (
         <main className="section container">
             <section className="about">

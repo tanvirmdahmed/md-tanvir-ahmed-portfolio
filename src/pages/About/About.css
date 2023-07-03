@@ -179,6 +179,39 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .stats__title {
+        padding-left: 35px;
+    }
+
+    .stats__title {
+        width: 22px;
+    }
+
+    .skills__container {
+        row-gap: 32px;
+    }
+
+    .progress__circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills__title {
+        margin-top: 20px;
+    }
+
+    .resume__icon {
+        width: 36px;
+        height: 36px;
+        line-height: 38px;
+    }
+
+    .resume__item {
+        padding-left: 55px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
 
     .about__container,
     .resume__container {

@@ -5,8 +5,10 @@ import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
 import { Bounce, Zoom } from 'react-awesome-reveal';
+import useTitle from '../../Hooks/useTitle';
 
 const Home = () => {
+    useTitle('Home')
     // const { text } = useTypewriter({
     //     words: ['Web Developer', 'Front-End Developer', 'MERN Stack Developer', 'Full Stack Developer'],
     //     loop: {},
@@ -32,11 +34,10 @@ const Home = () => {
                         </p>
                     </Bounce>
                     <h1 className="home__title">
-                        Hi, I'm<span> Md. Tanvir Ahmed</span>
+                        Hi, I'm <br />Md. Tanvir Ahmed
                     </h1>
 
                     <h2 className="home__subtitle">
-                        I'm a
                         <span>
                             {/* Style will be inherited from the parent element */}
                             <Typewriter

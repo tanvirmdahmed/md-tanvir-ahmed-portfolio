@@ -3,11 +3,13 @@ import './Portfolio.css'
 import { portfolio } from '../../data';
 import PortfolioItem from '../../components/PortfolioItem';
 import { Bounce } from 'react-awesome-reveal';
+import useTitle from '../../Hooks/useTitle';
 
 const Portfolio = () => {
+    useTitle('Portfolio')
     return (
         <section className="portfolio section">
-            <Bounce delay={500}>
+            <Bounce delay={300}>
                 <h2 className="section__title">My <span>Portfolio</span></h2>
             </Bounce>
 

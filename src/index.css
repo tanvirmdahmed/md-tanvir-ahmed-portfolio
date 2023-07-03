@@ -55,7 +55,7 @@
         --normal-font-size: 15px;
         --small-font-size: 14px;
         --smaller-font-size: 13px;
-        --tiny-font-size: 11px;
+        --tiny-font-size: 10px;
     }
 }
 
@@ -121,6 +121,13 @@ img {
 .grid {
     display: grid;
     gap: 30px;
+}
+
+.loader {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .section {
@@ -198,5 +205,11 @@ img {
 @media screen and (max-width: 1024px) {
     .container {
         max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    :root {
+        --tiny-font-size: 8px;
     }
 }

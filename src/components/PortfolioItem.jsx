@@ -9,11 +9,11 @@ const PortfolioItem = ({ img, title, usedTech, live, client, server, details }) 
     }
     return (
         <div className='portfolio__item'>
-            <Bounce delay={700}>
+            <Zoom delay={300}>
                 <div className='img__container'>
                     <div style={bgImg} className='bg__img'></div>
                 </div>
-            </Bounce>
+            </Zoom>
 
             <div className='info__container'>
                 <Zoom delay={700}>
@@ -28,13 +28,13 @@ const PortfolioItem = ({ img, title, usedTech, live, client, server, details }) 
                         }
                     </Bounce>
                 </div>
-                <Roll delay={700}>
+                <Zoom delay={700}>
                     <div className='link__btns'>
                         <Link to={live} className='link__btn'>Live Link</Link>
                         <Link to={client} className='link__btn'>Client Site</Link>
                         <Link to={server} className='link__btn'>Server Site</Link>
                     </div>
-                </Roll>
+                </Zoom>
             </div>
 
         </div>

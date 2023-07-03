@@ -43,7 +43,6 @@
     padding-left: 70px;
 }
 
-.home__title span,
 .home__subtitle span {
     color: var(--first-color);
     font-weight: var(--weight-700);
@@ -137,7 +136,9 @@
         margin: 0 auto;
     }
 
-    .home__title {
+    .home__title,
+    .home__subtitle {
+        text-align: center;
         padding-left: 0;
     }
 

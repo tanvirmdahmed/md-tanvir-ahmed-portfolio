@@ -4,8 +4,12 @@ import { FaEnvelopeOpen, FaFacebookF, FaLinkedin, FaPhoneSquareAlt, FaTwitter, F
 import { FiSend } from 'react-icons/fi';
 import emailjs from '@emailjs/browser';
 import { Bounce, Roll, Zoom } from 'react-awesome-reveal';
+import useTitle from '../../Hooks/useTitle';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+    useTitle('Contact')
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -15,8 +19,14 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text);
                 form.current.reset();
+                toast.success('Your message has sent!', {
+                    position: toast.POSITION.TOP_CENTER
+                });
             }, (error) => {
                 console.log(error.text);
+                toast.error('Sorry, Your message has not sent!', {
+                    position: toast.POSITION.TOP_CENTER
+                });
             });
     };
 
@@ -104,6 +114,7 @@ const Contact = () => {
                     </form>
                 </Zoom>
             </div>
+            <ToastContainer></ToastContainer>
         </section>
     );
 };
